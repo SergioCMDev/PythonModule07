@@ -1,4 +1,4 @@
-from ex0.Creature import Creature
+from .Creature import Creature
 
 
 class Aquabub(Creature):
@@ -7,4 +7,4 @@ class Aquabub(Creature):
 
     def attack(self) -> str:
         super().attack()
-        return "Aquabub"
+        return f"{self._name} uses Water Gun"

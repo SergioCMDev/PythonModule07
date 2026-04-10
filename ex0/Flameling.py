@@ -1,4 +1,4 @@
-from ex0.Creature import Creature
+from .Creature import Creature
 
 
 class Flameling(Creature):
@@ -7,4 +7,4 @@ class Flameling(Creature):
 
     def attack(self) -> str:
         super().attack()
-        return "Flame"
+        return f"{self._name} uses Ember"

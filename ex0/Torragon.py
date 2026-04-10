@@ -1,11 +1,11 @@
 
-from ex0.Creature import Creature
+from .Creature import Creature
 
 
-class Pyrodon(Creature):
+class Torragon(Creature):
     def __init__(self, name):
         super().__init__(name, "Torragon")
 
     def attack(self) -> str:
         super().attack()
-        return "Torragon"
+        return f"{self._name} uses hydro Pump"

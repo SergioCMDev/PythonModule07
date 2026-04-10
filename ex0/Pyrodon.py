@@ -1,4 +1,4 @@
-from ex0.Creature import Creature
+from .Creature import Creature
 
 
 class Pyrodon(Creature):
@@ -7,4 +7,4 @@ class Pyrodon(Creature):
 
     def attack(self) -> str:
         super().attack()
-        return "Pyrodon"
+        return f"{self._name} uses Flamethrower"
