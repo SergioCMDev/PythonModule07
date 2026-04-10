@@ -4,9 +4,9 @@ from abc import ABC, abstractmethod
 class TransformCapability(ABC):
 
     @abstractmethod
-    def transform(self, target):
+    def transform(self):
         pass
 
     @abstractmethod
-    def revert(self, target):
+    def revert(self):
         pass
