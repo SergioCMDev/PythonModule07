@@ -1,6 +1,8 @@
 from ex0 import Creature
-from . import HealCapability
+from .HealCapability import HealCapability
 
 
 class Sproutling(Creature, HealCapability):
-    pass
+
+    def heal(self, target) -> str:
+        return "Sproutling heal"

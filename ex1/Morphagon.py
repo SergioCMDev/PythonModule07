@@ -1,10 +1,10 @@
 from ex0 import Creature
-from . import TransformCapability
+from .TransformCapability import TransformCapability
 
 
 class Morphagon (Creature, TransformCapability):
-    def transform(target):
-        pass
+    def transform(self, target) -> str:
+        return "Morphagon transform"
 
-    def revert(target):
-        pass
+    def revert(self, target) -> str:
+        return "Morphagon revert"

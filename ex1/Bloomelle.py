@@ -3,4 +3,6 @@ from . import HealCapability
 
 
 class Bloomelle(Creature, HealCapability):
-    pass
+
+    def heal(self, target) -> str:
+        return "Blomelle heal"

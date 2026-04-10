@@ -5,9 +5,9 @@ class TransformCapability(ABC):
     current_capability = ""
 
     @abstractmethod
-    def transform(target):
+    def transform(self, target):
         pass
 
     @abstractmethod
-    def revert(target):
+    def revert(self, target):
         pass
