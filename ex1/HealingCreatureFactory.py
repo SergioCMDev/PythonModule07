@@ -4,6 +4,7 @@ from .Sproutling import Sproutling
 
 
 class HealingCreatureFactory(CreatureFactory):
+
     def create_base(self, name: str) -> Sproutling:
         return Sproutling(name)
 

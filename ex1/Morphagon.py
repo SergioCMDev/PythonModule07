@@ -3,8 +3,20 @@ from .TransformCapability import TransformCapability
 
 
 class Morphagon (Creature, TransformCapability):
-    def transform(self, target) -> str:
-        return "Morphagon transform"
 
-    def revert(self, target) -> str:
-        return "Morphagon revert"
+    def __init__(self, name):
+        super().__init__(name, "Morphagon")
+        self.current_capability = ""
+
+    def transform(self) -> str:
+        self.current_capability = "Improved"
+        return f"{self._name} morphs into a dragonic battle form"
+
+    def revert(self) -> str:
+        self.current_capability = ""
+        return f"{self._name} revert transformation and stabilizes its form."
+
+    def attack(self) -> str:
+        if (self.current_capability == "Improved"):
+            return f"{self._name} triattacks"
+        return f"{self._name} attacks"
