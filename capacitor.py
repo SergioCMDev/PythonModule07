@@ -11,7 +11,8 @@ def main() -> None:
     heal_evolved_creature = healingCreatureFactory.create_evolved("Bloomelle")
 
     transform_base_creature = transformCreatureFactory.create_base("Shiftling")
-    transform_evolved_creature = transformCreatureFactory.create_evolved("Morphagon")
+    transform_evolved_creature =  \
+        transformCreatureFactory.create_evolved("Morphagon")
 
     print(heal_base_creature.describe())
     print(heal_base_creature.attack())
