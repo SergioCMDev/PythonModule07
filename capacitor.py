@@ -4,6 +4,7 @@ from ex1 import TransformCreatureFactory, HealingCreatureFactory
 def main() -> None:
     print("Testing Creature with healing capability")
     print(" base:")
+
     healingCreatureFactory = HealingCreatureFactory()
     transformCreatureFactory = TransformCreatureFactory()
 
