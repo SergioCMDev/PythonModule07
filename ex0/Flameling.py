@@ -6,5 +6,4 @@ class Flameling(Creature):
         super().__init__(name, "Flameling")
 
     def attack(self) -> str:
-        super().attack()
         return f"{self._name} uses Ember."

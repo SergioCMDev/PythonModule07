@@ -7,5 +7,4 @@ class Torragon(Creature):
         super().__init__(name, "Torragon")
 
     def attack(self) -> str:
-        super().attack()
         return f"{self._name} uses hydro Pump."

@@ -6,5 +6,4 @@ class Aquabub(Creature):
         super().__init__(name, "Aquabub")
 
     def attack(self) -> str:
-        super().attack()
         return f"{self._name} uses Water Gun."

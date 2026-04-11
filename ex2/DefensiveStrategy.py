@@ -9,7 +9,7 @@ from .BattleStrategy import BattleStrategy
 class DefensiveStrategy (BattleStrategy):
     def act(self, criature: Creature):
         if (not self.is_valid(criature)):
-            raise "Criatura is not valid"
+            raise Exception("Criatura is not valid")
         if (not isinstance(criature, HealCapability)):
             return
         print(criature.attack())

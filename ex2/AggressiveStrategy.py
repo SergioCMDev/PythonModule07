@@ -10,7 +10,7 @@ from ex0 import Creature
 class AggressiveStrategy (BattleStrategy):
     def act(self, criature: Creature):
         if (not self.is_valid(criature)):
-            raise "Criatura is not valid"
+            raise Exception("Criatura is not valid")
         if (not isinstance(criature, TransformCapability)):
             return
         print(criature.transform())
