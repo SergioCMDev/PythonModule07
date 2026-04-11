@@ -17,7 +17,6 @@ def main() -> None:
     aggressiveStrategy = AggressiveStrategy()
     healingCreatureFactory.create_base()
 
-
     factory_aqua = AquaFactory()
     factory_flame = FlameFactory()
 
@@ -44,7 +43,6 @@ def main() -> None:
 
          ],
     )
-
 
 
 def battle(opponents: list[tuple[CreatureFactory, BattleStrategy]]) -> None:
@@ -91,9 +89,6 @@ def battle(opponents: list[tuple[CreatureFactory, BattleStrategy]]) -> None:
                 continue
             strategy_a.act(criature_a)
             strategy_b.act(criature_b)
-        
-
-
 
 
 if __name__ == "__main__":
