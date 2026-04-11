@@ -4,7 +4,7 @@ from .TransformCapability import TransformCapability
 
 class Shiftling (Creature, TransformCapability):
 
-    def __init__(self, name):
+    def __init__(self,  name: str = "Shiftling"):
         super().__init__(name, "Shiftling")
         self.current_capability = ""
 
@@ -14,9 +14,9 @@ class Shiftling (Creature, TransformCapability):
 
     def revert(self) -> str:
         self.current_capability = ""
-        return f"{self._name} returns to normal"
+        return f"{self._name} returns to normal."
 
     def attack(self) -> str:
         if (self.current_capability == "Improved"):
-            return f"{self._name} mega-attack"
-        return f"{self._name} attacks"
+            return f"{self._name} mega-attack."
+        return f"{self._name} attacks."

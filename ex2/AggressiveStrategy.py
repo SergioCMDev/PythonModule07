@@ -13,15 +13,15 @@ class AggressiveStrategy (BattleStrategy):
             raise "Criatura is not valid"
         if (not isinstance(criature, TransformCapability)):
             return
-        criature.transform()
-        criature.attack()
-        criature.revert()
+        print(criature.transform())
+        print(criature.attack())
+        print(criature.revert())
 
     def is_valid(self, criature: Creature) -> bool:
         if (criature is None):
             return False
         if (not isinstance(criature, HealCapability)
-                or not isinstance(criature, TransformCapability)):
+                and not isinstance(criature, TransformCapability)):
             return False
         if (isinstance(criature, TransformCapability)):
             return True

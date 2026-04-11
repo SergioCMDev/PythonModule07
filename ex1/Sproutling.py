@@ -5,13 +5,13 @@ from .HealCapability import HealCapability
 
 class Sproutling(Creature, HealCapability):
 
-    def __init__(self, name):
+    def __init__(self,  name: str = "Sproutling"):
         super().__init__(name, "Sproutling")
 
     def heal(self, target: Optional[Creature] = None) -> str:
         if target is not None:
             return f"{self._name} heals {target._name}"
-        return f"{self._name} heals itself"
+        return f"{self._name} heals itself."
 
     def attack(self) -> str:
-        return f"{self._name} attack"
+        return f"{self._name} attack."

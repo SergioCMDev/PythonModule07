@@ -8,4 +8,4 @@ class Torragon(Creature):
 
     def attack(self) -> str:
         super().attack()
-        return f"{self._name} uses hydro Pump"
+        return f"{self._name} uses hydro Pump."

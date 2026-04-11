@@ -7,4 +7,4 @@ class Pyrodon(Creature):
 
     def attack(self) -> str:
         super().attack()
-        return f"{self._name} uses Flamethrower"
+        return f"{self._name} uses Flamethrower."

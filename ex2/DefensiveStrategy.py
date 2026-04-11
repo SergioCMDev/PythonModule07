@@ -10,16 +10,16 @@ class DefensiveStrategy (BattleStrategy):
     def act(self, criature: Creature):
         if (not self.is_valid(criature)):
             raise "Criatura is not valid"
-        if (not isinstance(criature, TransformCapability)):
+        if (not isinstance(criature, HealCapability)):
             return
-        criature.attack()
-        criature.heal()
+        print(criature.attack())
+        print(criature.heal())
 
-    def is_valid(criature: Creature) -> bool:
+    def is_valid(self, criature: Creature) -> bool:
         if (criature is None):
             return False
         if (not isinstance(criature, HealCapability)
-                or not isinstance(criature, TransformCapability)):
+                and not isinstance(criature, TransformCapability)):
             return False
         if (isinstance(criature, HealCapability)):
             return True

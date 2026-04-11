@@ -3,11 +3,12 @@ from ex0 import Creature
 
 
 class NormalStrategy (BattleStrategy):
-    def act(criature: Creature):
-        criature.attack()
+    def act(self, criature: Creature):
+        print(criature.attack())
 
     def is_valid(self, criature: Creature) -> bool:
         if (criature is None):
             return False
-        if (criature is Creature):
+        if (isinstance(criature, Creature)):
             return True
+        return False
